@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="85">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="查看接收文件"
+            android:textColor="@color/TextViewColor"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <ImageButton android:id="@+id/fragment_bluetooth_file_but_finish"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentRight="true"
+                     android:layout_centerVertical="true"
+                     android:background="@null"
+                     android:padding="10dp"
+                     android:src="@drawable/sele_bluetooth_file_but_finish"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="490">
+        <ListView
+            android:id="@+id/fragment_bluetooth_file_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView android:id="@+id/fragment_bluetooth_tv_tishi"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:text="没有收到文件"
+                  android:textColor="@color/TextViewColor"
+                  android:textSize="30sp"
+                  android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

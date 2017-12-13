@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="100"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="660"
+        android:orientation="vertical">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="40"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="24"
+                      android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="100"
+                android:background="@drawable/scene_screen_liangdu_tv"/>
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="560"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="24"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="60"
+                      android:orientation="horizontal">
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginStart="10dp"
+                       android:src="@drawable/scene_liangdu_left"/>
+            <views.seekbar.BubbleSeekBar
+                android:id="@+id/fragment_scene_screen_seekBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingEnd="25dp"
+                android:paddingStart="25dp"
+                app:bsb_second_track_color="#2dc908"
+                app:bsb_track_color="#9095c158"
+                app:bsb_track_size="5dp"/>
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginEnd="10dp"
+                       android:src="@drawable/scene_liangdu_right"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="24"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="42"
+                      android:orientation="horizontal">
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"/>
+
+            <ImageButton android:id="@+id/fragment_scene_but_screen_biaozhun"
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="2"
+                         android:background="@null"
+                         android:scaleType="fitXY"
+                         android:src="@drawable/sele_scene_but_biaozhun"/>
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"/>
+
+            <ImageButton android:id="@+id/fragment_scene_but_screen_huwai"
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="2"
+                         android:background="@null"
+                         android:scaleType="fitXY"
+                         android:src="@drawable/sele_scene_but_huwai"/>
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"/>
+
+            <ImageButton android:id="@+id/fragment_scene_but_screen_yejian"
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="2"
+                         android:background="@null"
+                         android:scaleType="fitXY"
+                         android:src="@drawable/sele_scene_but_yejian"/>
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"/>
+
+            <ImageButton android:id="@+id/fragment_scene_but_screen_huyan"
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="2"
+                         android:background="@null"
+                         android:scaleType="fitXY"
+                         android:src="@drawable/sele_scene_but_huyan"/>
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"/>
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="35"/>
+
+        <LinearLayout android:id="@+id/scene_layout_sleep"
+                      android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="132"
+                      android:orientation="vertical">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="24"
+                          android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="100"
+                    android:background="@drawable/scene_sleep_time_tv"/>
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="560"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="24"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="60"
+                          android:orientation="horizontal">
+                <ImageView android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:layout_marginStart="10dp"
+                           android:src="@drawable/scene_sleep_left"/>
+
+
+                <views.seekbar.BubbleSeekBar
+                    android:id="@+id/fragment_scene_sleep_seekBar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingEnd="25dp"
+                    android:paddingStart="25dp"
+                    app:bsb_second_track_color="#0D61DD"
+                    app:bsb_track_color="#9095c158"
+                    app:bsb_track_size="5dp"/>
+
+                <!--<SeekBar-->
+                <!--android:id="@+id/fragment_scene_sleep_seekBar"-->
+                <!--style="@style/Fragment_scene_seekBar_style"-->
+                <!--android:progressDrawable="@drawable/seek_bar_scene_sleep_bg"/>-->
+
+                <ImageView android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:layout_marginEnd="10dp"
+                           android:src="@drawable/scene_sleep_right"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="24"/>
+        </LinearLayout>
+
+        <!--彩灯设置-->
+        <LinearLayout android:id="@+id/scene_layout_caideng"
+                      android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="132"
+                      android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="24"
+                          android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="100"
+                    android:background="@drawable/scene_caideng_tv"/>
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="560"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="24"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="60"
+                          android:orientation="horizontal">
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="1"/>
+                <ImageButton android:id="@+id/scene_but_caideng_open"
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:layout_weight="2"
+                             android:background="@null"
+                             android:src="@drawable/scene_but_caideng_opent_normal"/>
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="3"/>
+                <ImageButton android:id="@+id/scene_but_caideng_close"
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:layout_weight="2"
+                             android:background="@null"
+                             android:src="@drawable/scene_but_caideng_close_normal"/>
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="24"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="24"
+                      android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="100"
+                android:background="@drawable/scene_yinliang_tv"/>
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="560"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="24"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="60"
+                      android:orientation="horizontal">
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginStart="10dp"
+                       android:src="@drawable/scene_volume_left"/>
+
+            <views.seekbar.BubbleSeekBar
+                android:id="@+id/fragment_scene_volume_seekBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingEnd="25dp"
+                android:paddingStart="25dp"
+                app:bsb_second_track_color="#FA4D46"
+                app:bsb_track_color="#9095c158"
+                app:bsb_track_size="5dp"/>
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginEnd="10dp"
+                       android:src="@drawable/scene_volume_right"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="100"/>
+</LinearLayout>

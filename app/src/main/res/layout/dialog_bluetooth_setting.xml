@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/dialog_bluetooth_setting_bg"
+              android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="2"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:orientation="horizontal">
+        <ImageButton android:id="@+id/dialog_bluetooth_refresh"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1"
+                     android:background="@null"
+                     android:src="@drawable/sele_dialog_bluetooth_setting_refresh"/>
+        <ImageButton android:id="@+id/dialog_bluetooth_rename"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1"
+                     android:background="@null"
+                     android:src="@drawable/sele_dialog_bluetooth_setting_rename"/>
+        <ImageButton android:id="@+id/dialog_bluetooth_file"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1"
+                     android:background="@null"
+                     android:src="@drawable/sele_dialog_bluetooth_setting_file"/>
+    </LinearLayout>
+</LinearLayout>

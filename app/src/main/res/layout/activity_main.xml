@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:orientation="vertical">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="180">
+        <ImageButton
+            android:id="@+id/main_but_goBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:background="@null"
+            android:paddingBottom="10dp"
+            android:src="@drawable/sele_but_go_back"/>
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="570"
+                  android:orientation="horizontal">
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="55"/>
+        <RadioGroup android:id="@+id/main_radio_group"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="235"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp">
+
+            <RadioButton
+                android:id="@+id/main_radio_wifi"
+                style="@style/main_radio_style"
+                android:background="@drawable/sele_radio_wifi"/>
+            <RadioButton
+                android:id="@+id/main_radio_bluetooth"
+                style="@style/main_radio_style"
+                android:background="@drawable/sele_radio_bluetooth"/>
+            <RadioButton
+                android:id="@+id/main_radio_store"
+                style="@style/main_radio_style"
+                android:background="@drawable/sele_radio_store"/>
+            <RadioButton
+                android:id="@+id/main_radio_scene"
+                style="@style/main_radio_style"
+                android:background="@drawable/sele_radio_scene"/>
+            <RadioButton
+                android:id="@+id/main_radio_device"
+                style="@style/main_radio_style"
+                android:background="@drawable/sele_radio_device"/>
+            <RadioButton
+                android:id="@+id/main_radio_more"
+                style="@style/main_radio_style"
+                android:background="@drawable/sele_radio_more"/>
+
+        </RadioGroup>
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="50"/>
+        <FrameLayout android:id="@+id/main_frameLayout"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="870">
+        </FrameLayout>
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="70"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="60"/>
+
+</LinearLayout>

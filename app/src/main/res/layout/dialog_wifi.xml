@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout android:id="@+id/dialog_wifi_layout"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/dialog_wifi_bg"
+                  android:orientation="vertical">
+
+        <TextView android:id="@+id/dialog_wifi_title"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="115"
+                  android:gravity="center"
+                  android:text="icox"
+                  android:textColor="#4f6624"
+                  android:textSize="18sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="63">
+            <EditText android:id="@+id/dialog_wifi_edt_pws"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:background="@drawable/dialog_edt_bg"
+                      android:gravity="center"
+                      android:hint="请输入密码"/>
+        </RelativeLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="68"
+                      android:orientation="horizontal">
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="145"/>
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="140"
+                          android:orientation="vertical">
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="0dp"
+                              android:layout_weight="15"/>
+                <ImageButton android:id="@+id/dialog_wifi_but_show_pwd"
+                             android:layout_width="match_parent"
+                             android:layout_height="0dp"
+                             android:layout_gravity="center"
+                             android:layout_weight="30"
+                             android:background="@null"
+                             android:scaleType="fitXY"
+                             android:src="@drawable/show_pwd_normal"/>
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="0dp"
+                              android:layout_weight="23"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="369"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_gravity="center"
+                      android:layout_weight="97"
+                      android:orientation="horizontal">
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="20"/>
+            <ImageButton
+                android:id="@+id/dialog_wifi_btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:background="@null"
+                android:src="@drawable/sele_dialog_but_cancel"/>
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="15"/>
+            <ImageButton
+                android:id="@+id/dialog_wifi_btn_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:src="@drawable/sele_dialog_but_sure"/>
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="20"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

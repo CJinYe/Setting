@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="85">
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="150"/>
+
+        <TextView
+            android:id="@+id/fragment_bluetooth_tv_name"
+            style="@style/Fragment_wifi_title_style"
+            android:text="BlueTooth"/>
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="165"
+                      android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="20"/>
+
+            <ImageButton
+                android:id="@+id/fragment_bluetooth_iv_onOff"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="70"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/but_on"/>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="20"/>
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/fragment_bluetooth_ib_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/bluetooth_setting"/>
+
+    </LinearLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="490">
+
+        <ScrollView android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/fragment_bluetooth_ll_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <LinearLayout android:id="@+id/fragment_bluetooth_ll_old"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="可配对设备"
+                              android:textColor="@color/TextViewColor"
+                              android:textSize="20sp"/>
+                    <views.MyListView
+                        android:id="@+id/fragment_bluetooth_lv_old"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/fragment_bluetooth_ll_new"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="可连接设备"
+                              android:textColor="@color/TextViewColor"
+                              android:textSize="20sp"/>
+                    <views.MyListView
+                        android:id="@+id/fragment_bluetooth_lv_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView android:id="@+id/fragment_bluetooth_tv_tishi"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerInParent="true"
+                   android:src="@drawable/bluetooth_tv_no"
+                   android:visibility="gone"/>
+
+        <LinearLayout android:id="@+id/fragment_bluetooth_loading"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:orientation="vertical"
+                      android:visibility="gone">
+            <views.loading.LoadingView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:text="正在搜索..."
+                      android:textColor="@color/TextViewColor"
+                      android:textSize="20sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

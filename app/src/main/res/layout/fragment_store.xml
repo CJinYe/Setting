@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView android:id="@+id/test_tv"
+              android:layout_width="match_parent"
+              android:layout_height="100dp"
+              android:textSize="20sp"
+              android:visibility="gone"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="30"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="420"
+        android:orientation="horizontal">
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="0.1"/>
+
+        <!--<LinearLayout style="@style/Fragment_store_main_layout">-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/store_background"
+            android:orientation="vertical">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="40"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="212"
+                android:src="@drawable/store_bendi"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="31"/>
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="193">
+                <LinearLayout android:id="@+id/fragment_store_layout_local"
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="vertical">
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="30">
+                        <views.StoreSeekBar
+                            android:id="@+id/fragment_store_seekBar_local"
+                            style="@style/Fragment_store_seekbar_style"/>
+                    </RelativeLayout>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight="18"/>
+
+                    <views.StoreTextView android:id="@+id/fragment_store_tv_bendi"
+                                         style="@style/Fragment_store_tv_save_info"/>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight="27"/>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight="24"
+                                  android:orientation="horizontal">
+                        <LinearLayout android:layout_width="0dp"
+                                      android:layout_height="match_parent"
+                                      android:layout_weight="1"/>
+                        <ImageButton
+                            android:id="@+id/fragment_store_but_Local_save"
+                            style="@style/Fragment_store_save_button_style1"/>
+
+                        <LinearLayout android:layout_width="0dp"
+                                      android:layout_height="match_parent"
+                                      android:layout_weight="1"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight="30"/>
+                </LinearLayout>
+
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="vertical">
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight="3"/>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight="1"
+                                  android:orientation="horizontal">
+                        <LinearLayout android:layout_width="0dp"
+                                      android:layout_height="match_parent"
+                                      android:layout_weight="1"/>
+
+                        <ImageView android:id="@+id/fragment_store_iv_Local_no_device"
+                                   android:layout_width="0dp"
+                                   android:layout_weight="1.8"
+                                   android:scaleType="fitXY"
+                                   android:layout_height="match_parent"
+                                   android:src="@drawable/store_no_device"
+                                   android:visibility="gone"/>
+
+                        <LinearLayout android:layout_width="0dp"
+                                      android:layout_height="match_parent"
+                                      android:layout_weight="1"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight="3"/>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="0.05"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/store_background"
+            android:orientation="vertical">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="40"/>
+
+            <ImageView android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight="212"
+                       android:src="@drawable/store_sd_card"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="33"/>
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="191">
+
+                <LinearLayout android:id="@+id/fragment_store_layout_SDCard"
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="vertical">
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="30">
+                        <views.StoreSeekBar
+                            android:id="@+id/fragment_store_seekBar_SD_card"
+                            style="@style/Fragment_store_seekbar_style"/>
+                    </RelativeLayout>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight="20"/>
+
+                    <views.StoreTextView android:id="@+id/fragment_store_tv_sd_card"
+                                         style="@style/Fragment_store_tv_save_info"/>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight="27"/>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight="24"
+                                  android:orientation="horizontal">
+                        <LinearLayout android:layout_width="0dp"
+                                      android:layout_height="match_parent"
+                                      android:layout_weight="1"/>
+                        <ImageButton
+                            android:id="@+id/fragment_store_but_SDCard_save"
+                            style="@style/Fragment_store_save_button_style1"/>
+
+                        <LinearLayout android:layout_width="0dp"
+                                      android:layout_height="match_parent"
+                                      android:layout_weight="1"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight="30"/>
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="vertical">
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight="3"/>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight="1"
+                                  android:orientation="horizontal">
+                        <LinearLayout android:layout_width="0dp"
+                                      android:layout_height="match_parent"
+                                      android:layout_weight="1"/>
+
+                        <ImageView android:id="@+id/fragment_store_iv_SDCard_no_device"
+                                   android:layout_width="0dp"
+                                   android:layout_weight="1.8"
+                                   android:scaleType="fitXY"
+                                   android:layout_height="match_parent"
+                                   android:src="@drawable/store_no_device"
+                                   android:visibility="gone"/>
+
+                        <LinearLayout android:layout_width="0dp"
+                                      android:layout_height="match_parent"
+                                      android:layout_weight="1"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight="3"/>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="0.05"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/store_background"
+            android:orientation="vertical">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="40"/>
+
+            <ImageView android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight="212"
+                       android:src="@drawable/store_u_pan"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="33"/>
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="191">
+                <LinearLayout android:id="@+id/fragment_store_layout_UPan"
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="vertical">
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="30">
+                        <views.StoreSeekBar
+                            android:id="@+id/fragment_store_seekBar_U"
+                            style="@style/Fragment_store_seekbar_style"/>
+                    </RelativeLayout>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight="20"/>
+
+                    <views.StoreTextView android:id="@+id/fragment_store_tv_u_pan"
+                                         style="@style/Fragment_store_tv_save_info"/>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight="27"/>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight="24"
+                                  android:orientation="horizontal">
+                        <LinearLayout android:layout_width="0dp"
+                                      android:layout_height="match_parent"
+                                      android:layout_weight="1"/>
+                        <ImageButton
+                            android:id="@+id/fragment_store_but_U_save"
+                            style="@style/Fragment_store_save_button_style1"/>
+
+                        <LinearLayout android:layout_width="0dp"
+                                      android:layout_height="match_parent"
+                                      android:layout_weight="1"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight="30"/>
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="vertical">
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight="3"/>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight="1"
+                                  android:orientation="horizontal">
+                        <LinearLayout android:layout_width="0dp"
+                                      android:layout_height="match_parent"
+                                      android:layout_weight="1"/>
+
+                        <ImageView android:id="@+id/fragment_store_iv_u_no_device"
+                                   android:layout_width="0dp"
+                                   android:layout_weight="1.8"
+                                   android:scaleType="fitXY"
+                                   android:layout_height="match_parent"
+                                   android:src="@drawable/store_no_device"
+                                   android:visibility="gone"/>
+
+                        <LinearLayout android:layout_width="0dp"
+                                      android:layout_height="match_parent"
+                                      android:layout_weight="1"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight="3"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="0.1"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="30"/>
+</LinearLayout>

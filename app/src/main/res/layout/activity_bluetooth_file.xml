@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:padding="10dp"
+                  android:text="通过蓝牙接收的文件："
+                  android:textColor="@color/TextViewColor"
+                  android:textSize="20sp"/>
+        <ListView android:id="@+id/bluetooth_file_lv"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <TextView android:id="@+id/bluetooth_file_tv_no"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:padding="10dp"
+              android:text="没有收到文件"
+              android:textColor="@color/TextViewColor"
+              android:textSize="30sp"/>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:paddingEnd="15dp"
+              android:orientation="horizontal">
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/bluet_icon"/>
+    <TextView
+        android:id="@+id/item_bluetooth_tv_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:gravity="center_vertical"
+        android:textColor="#4f6624"
+        android:textSize="25sp"/>
+
+    <ImageButton android:id="@+id/item_bluetooth_ib_peidui"
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="wrap_content"
+                 android:scaleType="fitXY"
+                 android:layout_gravity="center"
+                 android:background="@null"
+                 android:src="@drawable/sele_bluetooth_peidui"/>
+</LinearLayout>
